@@ -1,0 +1,39 @@
+@color-main: #11a876;
+@color-mark: #bd2029;
+@font-main: 'RexBold', 'Helvetica', 'Tahoma', sans-serif;
+
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+
+.tick{
+  position: relative;
+  margin: 1.8em 0;
+  font-size: 24px;
+  &:before{
+    background: url('../img/benefits-tick.png') 0 0 no-repeat;
+    width: 66px;
+    height: 59px;
+    position: absolute;
+    content: '';
+    top: -15px;
+    left: -100px;
+  }
+}
+
+.img-thumbnail{
+  border: 14px solid #fff;
+  // background-color: #bd2028;
+  box-shadow: 0 27px 22px rgba(0,0,0,.22);
+  // margin-bottom: 15px;
+}
+
+.no-border{
+  border: none;
+}

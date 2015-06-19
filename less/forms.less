@@ -1,0 +1,143 @@
+.btn{
+  border: 1px solid #be6c05;
+  padding: .2em 1em;
+
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #ff9105;
+  -moz-box-shadow: 0 3px 2px rgba(0,0,0,.13), inset 0 0 5px rgba(255,255,190,.47);
+  -webkit-box-shadow: 0 3px 2px rgba(0,0,0,.13), inset 0 0 5px rgba(255,255,190,.47);
+  box-shadow: 0 3px 2px rgba(0,0,0,.13), inset 0 0 5px rgba(255,255,190,.47);
+  background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.14) 0%, rgba(255,255,255,.14) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0,0,0,.14) 0%, rgba(255,255,255,.14) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.14) 0%, rgba(255,255,255,.14) 100%);
+  background-image: linear-gradient(bottom, rgba(0,0,0,.14) 0%, rgba(255,255,255,.14) 100%);
+
+
+  color: @color-text;
+  font-family: @font1;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: bold;
+  text-shadow: 0 1px 3px @color-text-inverse;
+  text-decoration: none;
+
+  &:hover{
+    background-color: lighten(#ff9105, 10%);
+    color: lighten(@color-text, 10%);
+
+    background-image: -moz-linear-gradient(bottom, lighten(rgba(0,0,0,.14), 10%) 0%, lighten(rgba(255,255,255,.14), 10%) 100%);
+    background-image: -o-linear-gradient(bottom, lighten(rgba(0,0,0,.14), 10%) 0%, lighten(rgba(255,255,255,.14), 10%) 100%);
+    background-image: -webkit-linear-gradient(bottom, lighten(rgba(0,0,0,.14), 10%) 0%, lighten(rgba(255,255,255,.14), 10%) 100%);
+    background-image: linear-gradient(bottom, lighten(rgba(0,0,0,.14), 10%) 0%, lighten(rgba(255,255,255,.14), 10%) 100%);
+  }
+}
+
+.btn-accend{
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: lighten(@color-em, 10%);
+
+  color: @color-text-inverse;
+  font-family: @font-b;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .2em .5em;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+    background-color: lighten(lighten(@color-em, 10%), 10%);
+    color: darken(@color-text-inverse, 10%);
+  }
+
+}
+
+.action-form{
+  width: 382px;
+  padding: 10px 20px 0;
+  border: 3px solid @color-text-inverse;
+  -moz-border-radius: 11px 11px 11px 11px;
+  -webkit-border-radius: 11px 11px 11px 11px;
+  border-radius: 11px 11px 11px 11px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: rgba(45,46,50,.54);
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  h2{
+    color: @color-text-inverse;
+    font-family: @font-n;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    small{
+      display: block;
+      padding-top: .6em;
+      font-family: @font1;
+      font-size: 22px;
+      text-transform: initial;
+      font-weight: normal;
+    }
+  }
+
+  input.form-control{
+    margin: 15px 0;
+    border: 1px solid #d0d0d0;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    -moz-box-shadow: inset 0 2px 5px rgba(0,0,0,.72);
+    -webkit-box-shadow: inset 0 2px 5px rgba(0,0,0,.72);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,.72);
+
+    padding: 22px 12px;
+    text-indent: 40px;
+
+    font-family: @font-b;
+    font-size: 18px;
+    color: @color-text;
+
+    &::-webkit-input-placeholder {color: @color-text; font-family: @font-i;}
+    &:-moz-placeholder {color: @color-text; font-family: @font-i;}
+    &.user-ico{
+      background: #fff url(../img/user-ico.png) 15px center no-repeat;
+    }
+    &.tel-ico{
+      background: #fff url(../img/tel-ico.png) 15px center no-repeat;
+    }
+  }
+
+  .btn{
+    font-size: 36px;
+    width: 100%;
+    margin-top: .4em;
+    margin-bottom: 1.6em;
+    padding-bottom: 10px;
+  }
+}
+
+
+.action-form.modal-form{
+  width: auto;
+  border: none;
+  position: static;
+  background: none;
+}
