@@ -25,7 +25,7 @@ if(isset($_POST)){
 
 	$data .= $extra;
 
-	$mail = "egor.zubarev@gmail.com, alex_19@mail.ru";
+	$mail = "egor.zubarev@gmail.com, alex_19@mail.ru, manager@1-fk.ru, roman@indagate.ru";
 	$subject="=?utf-8?B?". base64_encode("Новая заявка с посадочной страницы: Франшиза 12комнат"). "?=";	
 	$date = date("d.m.yг. H:i:s", time() );
 
