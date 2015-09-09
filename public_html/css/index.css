@@ -566,9 +566,9 @@ form input[type=submit]{display:block!important;width:100%;font-size:22px}
 .contacts .ending{font-size:18px;position:relative}
 .contacts .ending:before{position:absolute;top:-20px;left:25px;content:'';display:block;width:951px;height:13px;background:url(../img/pattern.png) no-repeat}
 footer{background-color:#11a876;position:relative}
-footer .contacts,footer .site-12k{font-size:24px;color:#fff;position:absolute;top:10px;text-align:left}
-footer .contacts{left:20px}
-footer .site-12k{right:20px}
+footer .contacts,footer .site-12k{font-size:24px;color:#fff;position:absolute;top:10px}
+footer .contacts{left:20px;text-align:left}
+footer .site-12k{right:20px;text-align:center}
 footer .site-12k a,footer .site-12k a:active,footer .site-12k a:hover,footer .site-12k a:visited{color:#fff}
 footer .form-callback{width:315px;height:312px;background-color:#d1f5e7;box-shadow:inset 1px 2px 2px rgba(216,225,226,.45);margin:100px auto 0;text-align:center;padding:20px}
 footer .form-callback h3{font-size:24px;color:#bd2029}
