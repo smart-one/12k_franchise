@@ -522,7 +522,7 @@ body.remodal_active .remodal{-webkit-transform:scale(1);-ms-transform:scale(1);t
 .remodal .modal-form input.form-control{margin-bottom:.5em}
 .container{width:1000px;margin:0 auto;background:url(../img/bg.jpg) #fff;min-height:1000px}
 header{background-color:#11a876;padding:1em;margin-bottom:10px}
-header .btn{font-size:18px;display:block}
+header .btn{font-size:18px;display:block;color:#fff !important;}
 .btn{padding-top:.4em}
 b,strong{color:#bd2029}
 h1{color:#141518;font-size:45px;position:relative;margin-bottom:50px}
