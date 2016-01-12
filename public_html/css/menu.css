@@ -1,0 +1,118 @@
+input[type=checkbox].right_side_menu_btn
+{
+    position: fixed;
+    top: -999999999px;
+    right: -99999999px;
+}
+
+div.right_menu_container
+{
+    background-color: #000000;
+    width: 335px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -335px;
+
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+
+    transition: transform 300ms linear;
+
+    z-index: 1001;
+
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+input[type=checkbox].right_side_menu_btn:checked ~ div.right_menu_container
+{
+    -webkit-transform: translate3d(-335px, 0px, 0px);
+    -moz-transform: translate3d(-335px, 0px, 0px);
+    -ms-transform: translate3d(-335px, 0px, 0px);
+    -o-transform: translate3d(-335px, 0px, 0px);
+    transform: translate3d(-335px, 0px, 0px);
+
+    transition: transform 300ms linear;
+}
+input[type=checkbox].right_side_menu_btn:checked ~ label.right_side_menu_btn
+{
+    background-position: left top -22px;
+}
+
+
+div.right_menu_container h5
+{
+    color: #ffffff;
+    font-family: 'DINPro-Regular', Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+
+    margin: 0;
+    padding: 0;
+}
+
+div.right_menu_container h2
+{
+    color: #ffffff;
+    font-family: 'DINPro-Regular', Tahoma, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+div.right_menu_container
+ul.menu
+{
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    font-size: 0;
+    text-align: left;
+}
+div.right_menu_container
+ul.menu li
+{
+    display: block;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    vertical-align: top;
+    margin-top: 4px;
+}
+div.right_menu_container
+ul.menu li:first-of-type
+{
+    margin-top: 0;
+}
+div.right_menu_container
+ul.menu li a
+{
+    display: block;
+    color: #ffffff;
+    font-family: 'DINPro-Regular', Tahoma, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+
+    text-align: left;
+    text-decoration: none;
+}
