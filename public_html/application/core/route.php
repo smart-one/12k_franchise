@@ -18,6 +18,7 @@ class Route
         // разбираем текущий запрос
         //
         $url = parse_url($_SERVER['REQUEST_URI']);
+
         if(
             is_array($url) &&
             isset($url['path'])

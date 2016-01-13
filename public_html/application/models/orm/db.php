@@ -2,14 +2,19 @@
 
 class DataBase
 {
-    public $db_name = "opttorgkru_12kfr";
-
     protected $db = null;
+    protected $host;
+    protected $user;
+    protected $password;
+    public $db_name;
 
-    private $host = "localhost";
-    private $user = "opttorgkru_12kfr";
-    private $password = "12kfr_2016";
-
+    public function __construct()
+    {
+        $this->host = Config::get('db.host');
+        $this->user = Config::get('db.user');
+        $this->password = Config::get('db.password');
+        $this->db_name = Config::get('db.name');
+    }
 
     public function DBConnect()
     {
