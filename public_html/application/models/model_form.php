@@ -158,6 +158,6 @@ class Model_form extends Model
 
     private function sendEmail( $orderId, $messageText )
     {
-        mail( "epetrosian@inbox.ru", "заказ №".$orderId, $messageText );
+        mail( "manager@1-fk.ru", "заказ №".$orderId, $messageText );
     }
 }
