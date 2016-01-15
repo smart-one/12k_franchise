@@ -1,6 +1,7 @@
 div.section
 {
     min-width: 1280px;
+    min-height: 700px;
 }
 div.section_content
 {
