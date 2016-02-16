@@ -158,6 +158,15 @@ class Model_form extends Model
 
     private function sendEmail( $orderId, $messageText )
     {
-        mail( "manager@1-fk.ru", "заказ №".$orderId, $messageText );
+        $email = "manager@1-fk.ru";
+        $from = "info@12komnat.com";
+
+        $subject = '=?UTF-8?B?' . base64_encode("заказ №".$orderId) . '?=';
+
+        $headers  = "MIME-Version: 1.0\r\n";
+        $headers .= "Content-type: text/plain; charset=utf-8\r\n";
+        $headers .= "From: ".$from."\r\n";
+
+        mail( $email, $subject, $messageText, $headers);
     }
 }
